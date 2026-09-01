@@ -1,0 +1,70 @@
+AGE:
+age = int(input("Quel est ton age ?"))
+if age >= 18:
+    print("Accès autorisé")
+else:
+    print("Accès refusé")
+
+
+NOTE:
+note = int(input("Quelle est ta note sur 20 ?"))
+if note >= 16 :
+    print("trés bien")
+elif note >= 10 :
+    print("C'est correct")
+
+else :
+    print("Il faut encore travailler")
+
+
+MOT DE PASSE:
+nom = input("Nom ?")
+prenom = input("Prenom ?")
+grade = input("Grade ?")
+
+mot_de_passe = input("Mot de passe : ")
+
+if mot_de_passe != "python2026":
+    print("Mot de passe incorrect")
+else:
+    print(f"Bienvenue {grade} {nom} {prenom} ")
+
+VERIFICATION AGE AVEC AND
+
+age = int(input("Quel age as-tu ?"))
+carte = input("As tu une carte")
+
+if age >=18 and carte == "oui":
+    print("accès autorisé")
+
+else:
+    print("accès refusé")
+
+
+VERIFICATION AVEC AUTORISATION ET OR
+
+age = int(input("Quel age as-tu ?"))
+autorisation = input("As tu une autorisation ?")
+
+if age >=18 or autorisation == "oui":
+    print("accès autorisé")
+
+else:
+    print("accès refusé")
+
+
+nom = input("Quel est ton nom ?")
+prenom = input("Quel est ton prenom ?")
+age = int(input("Quel est ton age ?"))
+sexe = input("Sexe (M/F) ?").upper()
+
+print(f"{nom} {prenom} {age}")
+if age >= 18:
+    print("Personne Majeur")
+else:
+    print("Personne Mineur")
+
+if sexe == "M":
+    print("Masculin")
+else:
+    print("Feminin")
